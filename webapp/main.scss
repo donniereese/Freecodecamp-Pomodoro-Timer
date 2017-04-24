@@ -1,0 +1,75 @@
+$color-light: #D8DBE2;
+$color-light-alt: #A9BCD0;
+$color-dark: #373F51;
+$color-primary: #58A4B0;
+$color-secondary: #DAA49A;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-dark;
+  color: $color-light;
+  text-align: center;
+}
+
+.pomodoro {
+  margin: 0 auto;
+  min-width: 16em;
+  max-width: 460px;
+  width: 100%;
+  background-color: #e3e2e6;
+  border-radius: .3em;
+  padding: 2em;
+}
+
+.controls {
+  padding: 2em 1em 0;
+  display: block;
+  position: relative;
+
+  button {
+    font-size: 1.4em;
+    padding: .6em 1.4em;
+    color: $color-light;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    // border-radius: .25em;
+    margin: 0 -2px;
+
+    &:first-of-type {
+      border-top-left-radius: .25em;
+      border-bottom-left-radius: .25em;
+      padding-right: .7em;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: .25em;
+      border-bottom-right-radius: .25em;
+      padding-left: .7em
+    }
+  }
+}
+
+.timer {
+  line-height: 2em;
+  padding-top: 5em;
+  width: 12em;
+  height: 12em;
+  background: $color-secondary;
+  border-radius: 50%;
+  display: inline-block;
+
+  .timer-display {
+    font-family: sans-serif;
+    font-size: 3em;
+  }
+}
+
+
+.heightZero {
+  font-size: 0;
+  height: 0;
+  display: none;
+}
